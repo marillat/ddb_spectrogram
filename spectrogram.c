@@ -603,7 +603,7 @@ w_spectrogram_draw_cb (void *data) {
 }
 
 static void
-spectrogram_wavedata_listener (void *ctx, ddb_audio_data_t *data) {
+spectrogram_wavedata_listener (void *ctx, const ddb_audio_data_t *data) {
     w_spectrogram_t *w = ctx;
     if (!w->samples) {
         return;
